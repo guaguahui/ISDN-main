@@ -4,7 +4,7 @@
 ##### Configure the location of the dataset in the option.py file
 
 ```
-Run main.py
+python main.py
 ```
 
 ## test：
