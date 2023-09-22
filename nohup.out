@@ -1,0 +1,42 @@
+Making model...
+Traceback (most recent call last):
+  File "main.py", line 27, in <module>
+    main()
+  File "main.py", line 16, in main
+    _model = model.Model(args, checkpoint).to('cuda:0')
+  File "/home/data/fanminghui/EDSR2/model/__init__.py", line 22, in __init__
+    self.model = module.make_model(args).to(self.device)
+  File "/home/data/anaconda3/envs/torch_1/lib/python3.7/site-packages/torch/nn/modules/module.py", line 612, in to
+    return self._apply(convert)
+  File "/home/data/anaconda3/envs/torch_1/lib/python3.7/site-packages/torch/nn/modules/module.py", line 359, in _apply
+    module._apply(fn)
+  File "/home/data/anaconda3/envs/torch_1/lib/python3.7/site-packages/torch/nn/modules/module.py", line 359, in _apply
+    module._apply(fn)
+  File "/home/data/anaconda3/envs/torch_1/lib/python3.7/site-packages/torch/nn/modules/module.py", line 381, in _apply
+    param_applied = fn(param)
+  File "/home/data/anaconda3/envs/torch_1/lib/python3.7/site-packages/torch/nn/modules/module.py", line 610, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+  File "/home/data/anaconda3/envs/torch_1/lib/python3.7/site-packages/torch/cuda/__init__.py", line 172, in _lazy_init
+    torch._C._cuda_init()
+KeyboardInterrupt
+usage: main.py [-h] [--debug] [--template TEMPLATE] [--n_threads N_THREADS]
+               [--cpu] [--n_GPUs N_GPUS] [--seed SEED] [--dir_data DIR_DATA]
+               [--dir_demo DIR_DEMO] [--data_train DATA_TRAIN]
+               [--data_test DATA_TEST] [--data_range DATA_RANGE] [--ext EXT]
+               [--scale SCALE] [--patch_size PATCH_SIZE]
+               [--rgb_range RGB_RANGE] [--n_colors N_COLORS] [--chop]
+               [--no_augment] [--model MODEL] [--act ACT]
+               [--pre_train PRE_TRAIN] [--extend EXTEND]
+               [--n_resblocks N_RESBLOCKS] [--n_feats N_FEATS]
+               [--res_scale RES_SCALE] [--shift_mean SHIFT_MEAN] [--dilation]
+               [--precision {single,half}] [--reset] [--test_every TEST_EVERY]
+               [--epochs EPOCHS] [--batch_size BATCH_SIZE]
+               [--split_batch SPLIT_BATCH] [--self_ensemble] [--test_only]
+               [--gan_k GAN_K] [--lr LR] [--decay DECAY] [--gamma GAMMA]
+               [--optimizer {SGD,ADAM,RMSprop}] [--momentum MOMENTUM]
+               [--betas BETAS] [--epsilon EPSILON]
+               [--weight_decay WEIGHT_DECAY] [--gclip GCLIP] [--loss LOSS]
+               [--skip_threshold SKIP_THRESHOLD] [--save SAVE] [--load LOAD]
+               [--resume RESUME] [--save_models] [--print_every PRINT_EVERY]
+               [--save_results] [--save_gt]
+main.py: error: unrecognized arguments: log902.txt
